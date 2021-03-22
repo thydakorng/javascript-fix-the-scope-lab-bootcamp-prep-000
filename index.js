@@ -32,7 +32,7 @@ var funkyFunction = function() {
 // NOTE: you only need to modify the code below this line.
 var theFunk = funkyFunction()
 function outer() {
-  var theFunk = "FUNKY!"
+  var theFunk = funkyFunction
   return function inner(funkyFunction)
   {return theFunk + funkyFunction}
 }
